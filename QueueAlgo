@@ -1,0 +1,41 @@
+Algorithm:
+Step 1: Start 
+Step 2: Initialize queue
+Step 3: Initialize front and rear 
+Step 4: Display main menu 
+Step 5:	Read user choice
+          If choice=1, go to equeue operation steps
+          If choice=2, go to DE queue operation steps
+          If choice=3, go to Display operation steps
+          If choice=4, go to Exit operation steps
+          Otherwise, print  “invalid choice “ and return to Step 4
+
+E Queue () operation  Steps (choice =1)
+             StepE1: Check  queue overflow
+                            If rear==MAX-1, print “Queue overflow”and 
+                            return                                 
+             StepE2: Read item to insert:
+             StepE3: Check if queue empty
+             StepE4: Increment rearrear =rear+1 
+             StepE5: Assign queue element
+                           Queue[rear]=item
+             StepE6: print success message and return to step 4
+Dequeue () operation steps (choice =2)
+              StepD1: Check queue underflow
+                             If front ==-1 or front >  rear ,
+                              Print “queue underflow” and return to step 4
+              StepD2: Print Deleted element 
+              StepD3: Increment  front 
+                                      Front =front+1 and return to Step 4
+Display () operation steps (choice=3)
+                Step Ds1: Check if queue is  
+                              If front ==-1 or front >rear
+                               Print “Queue is empty “, return to Step 4
+                Step Ds2:  Loop through queue
+                                      For I =front to rear  
+                                       print queue[I]
+                Step Ds3: Return to main menu,  
+                                    go back  to step 4
+Exit operation steps (choice =4)
+Step x1: print Exit message
+Step x2: End 
